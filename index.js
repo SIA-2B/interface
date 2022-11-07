@@ -11,7 +11,7 @@ const getSongByName = async (args) => {
   
   const response = await axios_.post(apiUrl, {
     query: queries.getSongByName,
-    variables: { user: args.user },
+    //variables: { id: args.id },
   });
   return response.data.data;
 };

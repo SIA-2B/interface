@@ -1,5 +1,5 @@
 var soap = require('soap');
-var url = 'http://sounds-interface-z5fiut5qsa-uc.a.run.app/wsdl?wsdl';
+var url = "http://localhost:3002/wsdl?wsdl";
 
 // Create client
 soap.createClient(url, function (err, client) {
@@ -12,7 +12,7 @@ soap.createClient(url, function (err, client) {
     */
    
     var args = {
-      user: "voy"
+      id: 10,
     };
     // call the service
     client.Documents(args, function (err, res) {
