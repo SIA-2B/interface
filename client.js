@@ -1,5 +1,5 @@
 var soap = require('soap');
-var url = "http://f2d5-161-10-20-195.ngrok.io/wsdl?wsdl";
+var url = "http://b166-161-10-20-195.ngrok.io/wsdl?wsdl";
 
 // Create client
 soap.createClient(url, function (err, client) {

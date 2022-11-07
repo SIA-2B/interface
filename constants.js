@@ -1,5 +1,5 @@
 module.exports = {
-  apiUrl: `http//:host.docker.internal:5000/graphql`,
+  apiUrl: `http://172.18.0.1:5000/graphql`,
   queries: {
     getSongByName: `
       query{
