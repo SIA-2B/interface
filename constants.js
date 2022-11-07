@@ -1,17 +1,19 @@
 module.exports = {
-  apiUrl: `http://172.18.0.1:5000/graphql`,
+  apiUrl: `http://2c32-161-10-20-195.ngrok.io/graphql`,
   queries: {
     getSongByName: `
       query{
-        allCourses{
-          _id
-          datos_id
-          codigo_id
-          name
-          credit
-          periodo
-          nota
-          plan
+        allCursos{
+          id
+          nombre
+          creditos
+          tipologia
+          sede
+          nivelestudio
+          facultad
+          descripcion
+          prerequisitos
+          codigo
         }
       }`,
   },

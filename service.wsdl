@@ -72,10 +72,10 @@
   <!-- SERVICE:  -->
   <wsdl:service name="DocumentsService">
     <wsdl:port name="DocumentsServiceSoapPort" binding="tns:DocumentsServiceSoapBinding">
-      <soap:address location="http://b166-161-10-20-195.ngrok.io/wsdl"/>
+      <soap:address location="http://localhost:3002/wsdl"/>
     </wsdl:port>
     <wsdl:port name="DocumentsServiceSoap12Port" binding="tns:DocumentsServiceSoap12Binding">
-      <soap12:address location="http://b166-161-10-20-195.ngrok.io/wsdl"/>
+      <soap12:address location="http://localhost:3002/wsdl"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
