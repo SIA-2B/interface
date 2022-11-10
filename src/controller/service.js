@@ -15,5 +15,4 @@ module.exports.Uncademy = async function (req, res) {
 		});
 	});
 	res.send(p)
-	// res.send(url);
 }
