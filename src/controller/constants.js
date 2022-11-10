@@ -1,5 +1,5 @@
 module.exports = {
-  apiUrl: `http://2c32-161-10-20-195.ngrok.io/graphql`,
+  apiUrl: `http://172.20.0.1/graphiql`,
   queries: {
     getSongByName: `
       query{
