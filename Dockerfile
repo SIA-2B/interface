@@ -15,5 +15,6 @@ RUN npm install
 # Bundle app source
 COPY . /interface_ms
 EXPOSE 3004
+EXPOSE 3002
 
 CMD ["npm", "run", "dev"]

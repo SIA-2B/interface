@@ -61,6 +61,8 @@ var serviceObject = {
 const xml = fs.readFileSync("service.wsdl", "utf8");
 const app2 = express();
 
+const port2 = process.env.PORT2 || 4300;
+
 app2.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -72,7 +74,7 @@ app2.use(function (req, res, next) {
 
 app2.use(cors());
 
-app2.listen(3002, function () {
+app2.listen(port2, function () {
   var wsdl_path = "/wsdl";
   soap.listen(app2, wsdl_path, serviceObject, xml);
   console.log("Check http://localhost:3002" + wsdl_path + "?wsdl");
